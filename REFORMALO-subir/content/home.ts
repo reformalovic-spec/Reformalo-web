@@ -245,31 +245,6 @@ export const process = {
   ],
 } as const;
 
-export const projects = {
-  eyebrow: "Proyectos",
-  title: "Trabajos que hablan por nosotros",
-  description: "Cada negocio es distinto. Este es uno de los últimos que hemos puesto en marcha.",
-  featured: {
-    name: "Restaurante Oller",
-    text: "Web para un restaurante con carta, presentación del local y reservas, con un diseño cálido y apetecible.",
-    href: "https://timely-lollipop-41cab0.netlify.app/",
-    tags: ["Diseño web", "Restauración"],
-    cta: "Ver web",
-  },
-  // TODO: añadir casos reales (capturas, resultados, testimonios) cuando existan.
-  placeholders: [
-    {
-      title: "Próximo caso",
-      text: "Aquí irá otro proyecto real. ¿Quieres que sea el tuyo?",
-    },
-    {
-      title: "Próximo caso",
-      text: "Aquí irá otro proyecto real. ¿Quieres que sea el tuyo?",
-    },
-  ],
-  cta: "Quiero ser el siguiente",
-} as const;
-
 export const plans = {
   eyebrow: "Planes",
   title: "Una cuota inicial y, si quieres, mantenimiento",
