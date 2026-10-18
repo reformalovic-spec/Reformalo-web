@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <title>Formularios de Reformalo</title>
+  </head>
+  <body>
+    <!-- Definición para que Netlify detecte el formulario de contacto de Next.js.
+         El formulario real vive en components/sections/ContactForm.tsx. -->
+    <form name="contacto" data-netlify="true" netlify-honeypot="bot-field" hidden>
+      <input type="text" name="nombre" />
+      <input type="email" name="email" />
+      <input type="text" name="asunto" />
+      <textarea name="mensaje"></textarea>
+      <input type="checkbox" name="privacidad" />
+      <input type="text" name="bot-field" />
+    </form>
+  </body>
+</html>

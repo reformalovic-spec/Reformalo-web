@@ -1,0 +1,33 @@
+import type { Metadata } from "next";
+import { Hero } from "@/components/sections/Hero";
+import { Problem } from "@/components/sections/Problem";
+import { Services } from "@/components/sections/Services";
+import { AiDemo } from "@/components/sections/AiDemo";
+import { Process } from "@/components/sections/Process";
+import { Projects } from "@/components/sections/Projects";
+import { Plans } from "@/components/sections/Plans";
+import { Faq } from "@/components/sections/Faq";
+import { ContactSection } from "@/components/sections/ContactSection";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Reformalo: soluciones digitales e IA para pymes | Tu web, pero que venda",
+  },
+  alternates: { canonical: "/" },
+};
+
+export default function Home() {
+  return (
+    <>
+      <Hero />
+      <Problem />
+      <Services />
+      <AiDemo />
+      <Process />
+      <Projects />
+      <Plans />
+      <Faq />
+      <ContactSection />
+    </>
+  );
+}
