@@ -4,7 +4,6 @@ import { Problem } from "@/components/sections/Problem";
 import { Services } from "@/components/sections/Services";
 import { AiDemo } from "@/components/sections/AiDemo";
 import { Process } from "@/components/sections/Process";
-import { Projects } from "@/components/sections/Projects";
 import { Plans } from "@/components/sections/Plans";
 import { Faq } from "@/components/sections/Faq";
 import { ContactSection } from "@/components/sections/ContactSection";
@@ -24,7 +23,6 @@ export default function Home() {
       <Services />
       <AiDemo />
       <Process />
-      <Projects />
       <Plans />
       <Faq />
       <ContactSection />

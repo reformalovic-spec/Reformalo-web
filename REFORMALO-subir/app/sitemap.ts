@@ -8,7 +8,6 @@ const routes: { path: string; priority: number }[] = [
   { path: "/google-business", priority: 0.9 },
   { path: "/automatizaciones-ia", priority: 0.9 },
   { path: "/consultoria", priority: 0.8 },
-  { path: "/proyectos", priority: 0.7 },
   { path: "/contacto", priority: 0.8 },
   { path: "/aviso-legal", priority: 0.2 },
   { path: "/privacidad", priority: 0.2 },
