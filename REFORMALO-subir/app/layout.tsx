@@ -5,7 +5,8 @@ import { Providers } from "@/components/Providers";
 import { JsonLd } from "@/components/JsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { site } from "@/content/site";
+import { serviceLinks, site } from "@/content/site";
+import { servicePages } from "@/content/services";
 
 // Titulares con carácter + texto muy legible.
 const display = Bricolage_Grotesque({
@@ -21,7 +22,7 @@ const sans = Poppins({
   display: "swap",
 });
 
-const title = "Reformalo: tu web, pero que venda";
+const title = "Reformalo: agencia de soluciones digitales para pymes";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -49,15 +50,18 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+// Entidad principal: el mismo @id se referencia desde las páginas de servicio,
+// así buscadores e IAs entienden que todo pertenece a la misma empresa.
 // TODO: añadir dirección y teléfono si se quieren mostrar (LocalBusiness).
 const organization = {
-  "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": `${site.url}/#organizacion`,
   name: site.name,
   url: site.url,
   logo: `${site.url}/logo.png`,
   image: `${site.url}/opengraph-image`,
   description: site.description,
+  slogan: site.tagline,
   email: site.email,
   sameAs: [site.instagram],
   areaServed: [
@@ -65,14 +69,53 @@ const organization = {
     { "@type": "AdministrativeArea", name: "Catalunya" },
   ],
   knowsAbout: [
-    "Desarrollo web",
-    "SEO local",
-    "GEO",
-    "Google Business Profile",
-    "Automatizaciones con IA",
+    "Soluciones digitales para pymes",
     "Consultoría digital",
+    "Inteligencia artificial para negocios",
+    "Automatizaciones con IA",
+    "SEO local",
+    "GEO (optimización para motores generativos)",
+    "Google Business Profile",
+    "Diseño y desarrollo web",
   ],
   availableLanguage: ["es", "ca"],
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    email: site.email,
+    availableLanguage: ["es", "ca"],
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Servicios de Reformalo",
+    itemListElement: serviceLinks.map((link) => {
+      const page = servicePages[link.href.slice(1)];
+      return {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: page.label,
+          description: page.metaDescription,
+          url: `${site.url}${link.href}`,
+        },
+      };
+    }),
+  },
+};
+
+const website = {
+  "@type": "WebSite",
+  "@id": `${site.url}/#web`,
+  url: site.url,
+  name: site.name,
+  description: site.description,
+  inLanguage: "es-ES",
+  publisher: { "@id": organization["@id"] },
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [organization, website],
 };
 
 export default function RootLayout({
@@ -81,7 +124,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${display.variable} ${sans.variable}`}>
       <body>
-        <JsonLd data={organization} />
+        <JsonLd data={structuredData} />
         <Providers>
           <a
             href="#contenido"

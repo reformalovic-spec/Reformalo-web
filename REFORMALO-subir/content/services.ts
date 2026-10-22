@@ -1,6 +1,7 @@
-// Páginas de servicio. Los textos de SEO, diseño web, consultoría y Google
-// Business Profile proceden de la web actual; la de automatizaciones con IA y
-// el bloque GEO son nuevos y se basan en el servicio descrito por Reformalo.
+// Páginas de servicio. Los textos de SEO, diseño web, Google Business Profile
+// y la auditoría web de consultoría proceden de la web anterior; la de
+// automatizaciones con IA, el bloque GEO y el enfoque de consultoría de
+// soluciones digitales son nuevos y se basan en el servicio descrito por Reformalo.
 
 export type ServiceBlock = {
   eyebrow: string;
@@ -177,16 +178,63 @@ export const servicePages: Record<string, ServicePageData> = {
   consultoria: {
     slug: "consultoria",
     emoji: "🧭",
-    label: "Consultoría digital y de IA",
-    title: "Tu web ya existe, pero no da resultados",
+    label: "Consultoría de soluciones digitales",
+    title: "Consultoría de soluciones digitales a la medida de tu negocio",
     intro:
-      "Analizamos a fondo tu web actual, detectamos qué falla y te entregamos un plan de acción claro para que empiece a funcionar. Y te ayudamos a ver dónde puede ayudarte la IA.",
-    metaTitle: "Consultoría digital y de IA para pymes",
+      "Tú pones el objetivo. Nosotros encontramos la forma de hacerlo realidad. Analizamos cómo funciona tu negocio, detectamos dónde la tecnología te puede ayudar y te proponemos un plan claro, con solo lo que de verdad te aporta.",
+    metaTitle: "Consultoría de soluciones digitales para pymes",
     metaDescription:
-      "Auditoría de tu web y de tu presencia online, con un plan de acción claro y sin tecnicismos. Consultoría digital y de IA para pymes en Osona y Catalunya.",
+      "Consultoría de soluciones digitales e IA para pymes de Osona y Catalunya: analizamos tu negocio y te damos un plan claro y sin tecnicismos.",
     blocks: [
       {
-        eyebrow: "Para quién es",
+        eyebrow: "Cómo trabajamos",
+        title: "Primero escuchamos, después proponemos",
+        intro: [
+          "Cada negocio tiene sus propios retos: tareas que se comen el día, clientes que no encuentran el negocio, consultas que llegan fuera de horario o una web que no aporta. Antes de hablar de herramientas, queremos entender el tuyo.",
+          "A partir de ahí te proponemos soluciones concretas y priorizadas, ya sea una automatización, un asistente con IA, mejorar tu visibilidad en Google o una web nueva. Y si lo quieres, te acompañamos hasta dejarlo funcionando.",
+        ],
+        points: [
+          "Conocemos tu negocio, tus procesos y tus objetivos",
+          "Detectamos qué se puede mejorar con tecnología",
+          "Te damos un plan claro, por orden de impacto",
+          "Te acompañamos en la puesta en marcha",
+        ],
+      },
+      {
+        eyebrow: "Qué podemos resolver",
+        title: "Soluciones digitales para retos reales",
+        intro: [
+          "Estos son algunos de los problemas más habituales en pymes y negocios locales, y cómo los abordamos.",
+        ],
+        cards: [
+          {
+            title: "Tareas repetitivas",
+            text: "Automatizamos lo que hoy haces a mano para que recuperes tiempo cada semana.",
+          },
+          {
+            title: "Atención al cliente",
+            text: "Respuestas automáticas con IA para que nadie se quede sin contestar, también fuera de horario.",
+          },
+          {
+            title: "Visibilidad online",
+            text: "SEO, GEO y perfil de empresa en Google para que te encuentren quienes te buscan.",
+          },
+          {
+            title: "Reseñas y reputación",
+            text: "Un sistema sencillo para pedir reseñas y ganar la confianza de nuevos clientes.",
+          },
+          {
+            title: "IA en tu día a día",
+            text: "Te ayudamos a ver dónde la inteligencia artificial te ahorra trabajo de verdad, y dónde no.",
+          },
+          {
+            title: "Una web que no aporta",
+            text: "Revisamos tu web actual y te decimos qué mejorar, o si conviene empezar de nuevo.",
+          },
+        ],
+      },
+      {
+        eyebrow: "Si ya tienes web",
         title: "Cuando tienes web pero sientes que no aporta",
         intro: [
           "Muchas pymes invierten en una web y luego se preguntan por qué no reciben llamadas ni clientes. La buena noticia es que casi siempre hay margen de mejora, y a menudo con cambios más sencillos de lo que parece.",
@@ -233,8 +281,8 @@ export const servicePages: Record<string, ServicePageData> = {
       },
     ],
     cta: {
-      title: "¿Quieres saber qué falla en tu web?",
-      text: "Pídenos una consultoría y te diremos exactamente qué mejorar para conseguir más clientes.",
+      title: "¿Tienes un objetivo en mente?",
+      text: "Cuéntanoslo y te decimos, sin compromiso, cómo podemos hacerlo realidad.",
     },
   },
 

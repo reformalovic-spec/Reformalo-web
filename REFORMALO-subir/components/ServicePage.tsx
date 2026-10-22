@@ -28,14 +28,38 @@ function Check() {
 export function ServicePage({ slug }: { slug: string }) {
   const page = servicePages[slug];
 
+  const url = `${site.url}/${page.slug}`;
+  // El proveedor apunta a la entidad definida en el layout (mismo @id).
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    name: page.label,
-    description: page.metaDescription,
-    url: `${site.url}/${page.slug}`,
-    provider: { "@type": "ProfessionalService", name: site.name, url: site.url },
-    areaServed: ["Osona", "Catalunya"],
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": `${url}#servicio`,
+        name: page.label,
+        serviceType: page.label,
+        description: page.metaDescription,
+        url,
+        provider: {
+          "@type": "ProfessionalService",
+          "@id": `${site.url}/#organizacion`,
+          name: site.name,
+          url: site.url,
+        },
+        areaServed: [
+          { "@type": "AdministrativeArea", name: "Osona" },
+          { "@type": "AdministrativeArea", name: "Catalunya" },
+        ],
+        availableLanguage: ["es", "ca"],
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
+          { "@type": "ListItem", position: 2, name: page.label, item: url },
+        ],
+      },
+    ],
   };
 
   return (

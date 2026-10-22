@@ -5,13 +5,16 @@ import { TiltCard } from "@/components/ui/TiltCard";
 import { services } from "@/content/home";
 
 // Rejilla bento: cada tarjeta ocupa un ancho distinto en pantallas grandes.
+// La consultoría es el servicio principal y ocupa toda la primera fila.
 const span: Record<string, string> = {
-  web: "lg:col-span-7",
-  seo: "lg:col-span-5",
-  google: "lg:col-span-4",
-  ia: "lg:col-span-8",
   consultoria: "lg:col-span-12",
+  ia: "lg:col-span-7",
+  seo: "lg:col-span-5",
+  google: "lg:col-span-5",
+  web: "lg:col-span-7",
 };
+
+const featuredSlug = "consultoria";
 
 function Check({ dark }: { dark: boolean }) {
   return (
@@ -47,7 +50,7 @@ export function Services() {
 
         <ul className="mt-12 grid gap-5 lg:grid-cols-12">
           {services.cards.map((card, i) => {
-            const dark = card.slug === "ia";
+            const dark = card.slug === featuredSlug;
             return (
               <Reveal
                 key={card.slug}
@@ -95,18 +98,38 @@ export function Services() {
                       </span>
                     </div>
 
-                    <h3 className="mt-6 font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                    {dark && (
+                      <p className="mt-6 w-fit rounded-full bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-brand-light">
+                        Servicio principal
+                      </p>
+                    )}
+                    <h3
+                      className={`font-display font-bold tracking-tight ${
+                        dark
+                          ? "mt-3 text-3xl sm:text-4xl"
+                          : "mt-6 text-2xl sm:text-3xl"
+                      }`}
+                    >
                       {card.title}
                     </h3>
+                    {card.tagline && (
+                      <p className="mt-4 max-w-3xl font-display text-2xl font-semibold leading-snug text-brand-light sm:text-3xl">
+                        {card.tagline}
+                      </p>
+                    )}
                     <p
-                      className={`mt-2 max-w-xl text-lg leading-relaxed ${
-                        dark ? "text-brand-soft" : "text-ink-muted"
+                      className={`mt-3 text-lg leading-relaxed ${
+                        dark ? "max-w-3xl text-brand-soft" : "max-w-xl text-ink-muted"
                       }`}
                     >
                       {card.text}
                     </p>
 
-                    <ul className="mt-6 grid gap-2.5 sm:grid-cols-1">
+                    <ul
+                      className={`mt-6 grid gap-2.5 ${
+                        dark ? "sm:grid-cols-2 sm:gap-x-8" : "sm:grid-cols-1"
+                      }`}
+                    >
                       {card.points.map((p) => (
                         <li key={p} className="flex gap-3 text-base">
                           <Check dark={dark} />

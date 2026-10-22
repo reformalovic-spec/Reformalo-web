@@ -10,7 +10,7 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Reformalo: soluciones digitales e IA para pymes | Tu web, pero que venda",
+    absolute: "Reformalo: agencia de soluciones digitales en Osona y Catalunya",
   },
   alternates: { canonical: "/" },
 };

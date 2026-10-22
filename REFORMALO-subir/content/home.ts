@@ -2,28 +2,28 @@
 // bastará con duplicar este archivo como `home.ca.ts` y elegir por idioma.
 
 export const hero = {
-  eyebrow: "Agencia digital y de IA · Osona y Catalunya",
-  title: "Tu web, pero que *venda*.",
+  eyebrow: "Agencia de soluciones digitales · Osona y Catalunya",
+  title: "Soluciones digitales a tu *medida*.",
   subtitle:
-    "Soluciones digitales e inteligencia artificial para pymes y negocios locales. Web, SEO, Google y automatizaciones que trabajan por ti, incluso cuando estás cerrado.",
+    "Ayudamos a pymes y negocios locales a resolver sus retos con tecnología. Empezamos entendiendo tu negocio y, a partir de ahí, combinamos consultoría, inteligencia artificial, automatizaciones, visibilidad en Google y web.",
   primary: "Hablemos",
   secondary: "Ver servicios",
   chips: [
-    { label: "SEO", emoji: "🔎" },
-    { label: "GEO", emoji: "✨" },
-    { label: "Google Maps", emoji: "📍" },
-    { label: "WhatsApp IA", emoji: "💬" },
-    { label: "Reseñas", emoji: "⭐" },
+    { label: "Consultoría", emoji: "🧭" },
+    { label: "IA", emoji: "✨" },
+    { label: "Automatización", emoji: "⚙️" },
+    { label: "SEO y GEO", emoji: "🔎" },
+    { label: "Web", emoji: "🌐" },
   ],
   marquee: [
-    "Diseño web",
-    "SEO",
-    "GEO",
+    "Consultoría digital",
+    "Soluciones a medida",
+    "Inteligencia artificial",
+    "Automatizaciones",
+    "SEO y GEO",
     "Google Business Profile",
-    "Automatizaciones con IA",
+    "Diseño web",
     "WhatsApp",
-    "Reseñas",
-    "Consultoría",
   ],
 } as const;
 
@@ -75,24 +75,40 @@ export type ServiceCard = {
   title: string;
   text: string;
   points: readonly string[];
+  /** Frase destacada; solo la usa el servicio principal. */
+  tagline?: string;
 };
 
 export const services = {
   eyebrow: "Servicios",
-  title: "Todo lo digital que tu negocio necesita, en un solo sitio",
+  title: "Soluciones digitales para cada reto de tu negocio",
   description:
-    "Cinco servicios que se complementan. Empieza por el que más falta te haga y suma cuando quieras.",
+    "Todo empieza por entender qué necesitas. Después elegimos las piezas que lo resuelven: consultoría, inteligencia artificial, visibilidad en Google y web.",
   cards: [
     {
-      slug: "web",
-      href: "/diseno-web",
-      emoji: "🌐",
-      title: "Desarrollo web",
-      text: "Webs rápidas, claras y bonitas que convierten visitas en llamadas, reservas y clientes.",
+      slug: "consultoria",
+      href: "/consultoria",
+      emoji: "🧭",
+      title: "Consultoría de soluciones digitales",
+      tagline: "Tú pones el objetivo. Nosotros encontramos la forma de hacerlo realidad.",
+      text: "Nos sentamos contigo, entendemos cómo funciona tu negocio y te proponemos las soluciones digitales que de verdad te encajan, sin jerga y sin vender lo que no necesitas.",
       points: [
-        "Diseño a medida con tu marca",
-        "Pensada primero para el móvil",
-        "Preparada para que te contacten",
+        "Análisis de tu negocio, tus procesos y tu presencia online",
+        "Plan de acción claro y priorizado",
+        "Dónde y cómo te puede ayudar la IA",
+        "Te acompañamos hasta ponerlo en marcha",
+      ],
+    },
+    {
+      slug: "ia",
+      href: "/automatizaciones-ia",
+      emoji: "🤖",
+      title: "Automatizaciones con IA",
+      text: "Tu negocio contestando solo: WhatsApp, reseñas y recordatorios sin que muevas un dedo.",
+      points: [
+        "Respuestas automáticas en WhatsApp",
+        "Petición de reseñas tras cada cliente",
+        "Recordatorios de citas con Make.com",
       ],
     },
     {
@@ -120,27 +136,15 @@ export const services = {
       ],
     },
     {
-      slug: "ia",
-      href: "/automatizaciones-ia",
-      emoji: "🤖",
-      title: "Automatizaciones con IA",
-      text: "Tu negocio contestando solo: WhatsApp, reseñas y recordatorios sin que muevas un dedo.",
+      slug: "web",
+      href: "/diseno-web",
+      emoji: "🌐",
+      title: "Diseño y desarrollo web",
+      text: "Cuando la solución pasa por una web, la hacemos rápida, clara y pensada para que te contacten.",
       points: [
-        "Respuestas automáticas en WhatsApp",
-        "Petición de reseñas tras cada cliente",
-        "Recordatorios de citas con Make.com",
-      ],
-    },
-    {
-      slug: "consultoria",
-      href: "/consultoria",
-      emoji: "🧭",
-      title: "Consultoría digital y de IA",
-      text: "¿Ya tienes web pero no te da resultados? Te decimos qué falla y cómo arreglarlo, sin jerga.",
-      points: [
-        "Auditoría completa de tu presencia online",
-        "Diagnóstico claro y plan de acción",
-        "Dónde y cómo usar IA en tu negocio",
+        "Diseño a medida con tu marca",
+        "Pensada primero para el móvil",
+        "Preparada para que te contacten",
       ],
     },
   ] satisfies readonly ServiceCard[],
@@ -231,8 +235,8 @@ export const process = {
       text: "Una charla para entender tu negocio, tus clientes y lo que de verdad necesitas.",
     },
     {
-      title: "Diseñamos y construimos",
-      text: "Web, ficha de Google y automatizaciones a medida, con tu marca y tu forma de hablar.",
+      title: "Diseñamos la solución",
+      text: "Elegimos las herramientas que encajan contigo, ya sea IA, automatizaciones, Google o web, y las construimos a medida.",
     },
     {
       title: "Lo ponemos en marcha",
@@ -283,6 +287,14 @@ export const faq = {
   eyebrow: "FAQ",
   title: "Preguntas que nos hacen siempre",
   items: [
+    {
+      q: "¿Qué hace una agencia de soluciones digitales como Reformalo?",
+      a: "Ayudamos a pymes y negocios locales a resolver problemas reales con tecnología. Primero entendemos tu negocio y tus objetivos, y después proponemos y ponemos en marcha lo que mejor encaja: automatizaciones con IA, visibilidad en Google y en las IAs (SEO y GEO), perfil de empresa en Google o una web. No vendemos paquetes cerrados: cada solución se diseña a medida.",
+    },
+    {
+      q: "No sé qué necesita mi negocio, ¿por dónde empiezo?",
+      a: "Por una consultoría. Hablamos contigo, analizamos cómo trabajas y tu presencia online, y te damos un plan claro con prioridades. Así sabes qué te aporta más antes de invertir en nada.",
+    },
     {
       q: "¿Qué es el GEO?",
       a: "GEO significa optimización para motores generativos. Consiste en que herramientas como ChatGPT, Gemini o Perplexity entiendan tu negocio y puedan recomendarlo cuando alguien pregunta por lo que ofreces. Es el hermano pequeño del SEO y cada vez cuenta más.",

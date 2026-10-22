@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
-export const alt = "Reformalo: tu web, pero que venda";
+export const alt = "Reformalo: agencia de soluciones digitales a tu medida";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -47,8 +47,8 @@ export default async function OpengraphImage() {
               color: "#101426",
             }}
           >
-            <span>Tu web, pero que&nbsp;</span>
-            <span style={{ color: "#5170FF" }}>venda.</span>
+            <span>Soluciones digitales a tu&nbsp;</span>
+            <span style={{ color: "#5170FF" }}>medida.</span>
           </div>
           <div
             style={{
@@ -58,7 +58,7 @@ export default async function OpengraphImage() {
               color: "#5A6072",
             }}
           >
-            Soluciones digitales e IA para pymes · Osona y Catalunya
+            Agencia de soluciones digitales · Osona y Catalunya
           </div>
         </div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
