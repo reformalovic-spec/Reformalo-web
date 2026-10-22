@@ -183,6 +183,10 @@
    "No vendemos ni cedemos tus datos a terceros. Los formularios se procesan a través del servicio Netlify Forms (Netlify, Inc.), que actúa como encargado del tratamiento únicamente para hacernos llegar tu mensaje. Los datos pueden alojarse en servidores de proveedores que cumplen con las garantías exigidas por el RGPD."
   ],
   [
+   "p",
+   "Si aceptas las cookies de análisis o de publicidad, Google Ireland Limited tratará datos de tu navegación en los términos descritos en la política de cookies. Puedes retirar ese consentimiento en cualquier momento desde «Configurar cookies», en el pie de página."
+  ],
+  [
    "h2",
    "6. Conservación de los datos"
   ],
@@ -214,7 +218,7 @@
   ],
   [
    "p",
-   "Última actualización: junio de 2026"
+   "Última actualización: octubre de 2026"
   ],
   [
    "p",
@@ -234,15 +238,23 @@
   ],
   [
    "p",
-   "Este sitio web ha sido diseñado para respetar al máximo tu privacidad:"
+   "En esta web utilizamos los siguientes tipos de cookies y tecnologías similares:"
   ],
   [
    "li",
-   "Cookies técnicas o necesarias: son imprescindibles para el funcionamiento del sitio y para recordar tu preferencia sobre este aviso de cookies. Están exentas de consentimiento."
+   "Técnicas o necesarias: imprescindibles para el funcionamiento del sitio. Incluyen el almacenamiento local en tu navegador de tu elección sobre las cookies (clave «reformalo-consent»), que se conserva hasta que la cambies o borres los datos de navegación. Están exentas de consentimiento."
   ],
   [
    "li",
-   "No utilizamos cookies de análisis ni de publicidad de terceros. No rastreamos tu navegación con fines estadísticos ni comerciales."
+   "De análisis (solo si las aceptas): nos permiten saber, de forma agregada, cuántas personas visitan la web y qué páginas consultan. Las instala Google Analytics; por ejemplo, _ga y _ga_<ID>, con una duración de hasta 2 años."
+  ],
+  [
+   "li",
+   "De publicidad (solo si las aceptas): nos permiten medir y mejorar nuestras campañas de Google Ads; por ejemplo, _gcl_au, con una duración de 90 días."
+  ],
+  [
+   "p",
+   "Gestionamos estas herramientas con Google Tag Manager, que por sí mismo no instala cookies. Mientras no aceptes las cookies de análisis o de publicidad, no se instalan: utilizamos el modo de consentimiento de Google, de forma que sus herramientas solo reciben señales técnicas básicas sin cookies."
   ],
   [
    "p",
@@ -250,11 +262,27 @@
   ],
   [
    "h2",
-   "3. Gestión de cookies"
+   "3. Terceros y transferencias internacionales"
   ],
   [
    "p",
-   "Puedes permitir, bloquear o eliminar las cookies instaladas en tu dispositivo configurando las opciones de tu navegador. A continuación tienes los enlaces de ayuda de los navegadores más habituales:"
+   "Las cookies de análisis y de publicidad pertenecen a Google Ireland Limited (Gordon House, Barrow Street, Dublín 4, Irlanda). Google puede tratar datos en Estados Unidos al amparo del Marco de Privacidad de Datos UE-EE. UU. Puedes consultar cómo utiliza Google la información en policies.google.com/technologies/partner-sites."
+  ],
+  [
+   "h2",
+   "4. Cómo aceptar, rechazar o cambiar tu elección"
+  ],
+  [
+   "p",
+   "La primera vez que visitas la web te mostramos un aviso para que aceptes, rechaces o configures las cookies que no son necesarias. Rechazarlas es tan sencillo como aceptarlas y no afecta al uso de la web."
+  ],
+  [
+   "p",
+   "Puedes cambiar tu elección o retirar tu consentimiento en cualquier momento desde el enlace «Configurar cookies» del pie de página. Al retirarlo, eliminamos las cookies de análisis y de publicidad que se hubieran instalado."
+  ],
+  [
+   "p",
+   "También puedes permitir, bloquear o eliminar las cookies desde la configuración de tu navegador. A continuación tienes los enlaces de ayuda de los navegadores más habituales:"
   ],
   [
    "li",
@@ -274,15 +302,15 @@
   ],
   [
    "h2",
-   "4. Cambios en la política de cookies"
+   "5. Cambios en la política de cookies"
   ],
   [
    "p",
-   "Si en el futuro incorporamos cookies de análisis o de terceros, actualizaremos esta política y solicitaremos tu consentimiento previo cuando sea necesario."
+   "Podemos actualizar esta política si cambian las herramientas que utilizamos. Lo indicaremos en esta página con la fecha de la última actualización y, cuando sea necesario, volveremos a pedirte el consentimiento."
   ],
   [
    "h2",
-   "5. Contacto"
+   "6. Contacto"
   ],
   [
    "p",

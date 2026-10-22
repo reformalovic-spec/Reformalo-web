@@ -58,7 +58,7 @@ export function LegalPage({ blocks }: { blocks: Block[] }) {
   flush("end");
 
   return (
-    <article className="container-x max-w-3xl pb-24 pt-32 sm:pt-40">
+    <article className="container-x max-w-3xl break-words pb-24 pt-32 sm:pt-40">
       {out}
     </article>
   );
