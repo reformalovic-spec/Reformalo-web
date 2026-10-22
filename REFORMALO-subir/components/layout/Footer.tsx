@@ -21,8 +21,8 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-5 max-w-xs text-base leading-relaxed">
-              Soluciones digitales e IA para pymes y negocios locales de Osona
-              y Catalunya.
+              Agencia de soluciones digitales para pymes y negocios locales de
+              Osona y Catalunya.
             </p>
           </div>
 

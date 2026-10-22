@@ -4,9 +4,9 @@ export const site = {
   email: "reformalo.vic@gmail.com",
   instagram: "https://www.instagram.com/reformalovic",
   instagramHandle: "@reformalovic",
-  tagline: "Tu web, pero que venda.",
+  tagline: "Soluciones digitales a tu medida.",
   description:
-    "Soluciones digitales e IA para pymes y negocios locales de Osona y Catalunya: webs, SEO y GEO, Google Business Profile y automatizaciones con IA.",
+    "Agencia de soluciones digitales para pymes de Osona y Catalunya: consultoría, automatizaciones con IA, SEO y GEO, Google Business Profile y webs.",
   responseTime: "Lunes a viernes · respuesta en 24-48 h",
 } as const;
 
@@ -18,11 +18,11 @@ export const nav = [
 ] as const;
 
 export const serviceLinks = [
-  { label: "Diseño web", href: "/diseno-web" },
+  { label: "Consultoría de soluciones digitales", href: "/consultoria" },
+  { label: "Automatizaciones con IA", href: "/automatizaciones-ia" },
   { label: "SEO y GEO", href: "/seo" },
   { label: "Google Business Profile", href: "/google-business" },
-  { label: "Automatizaciones con IA", href: "/automatizaciones-ia" },
-  { label: "Consultoría", href: "/consultoria" },
+  { label: "Diseño web", href: "/diseno-web" },
 ] as const;
 
 export const legalLinks = [
