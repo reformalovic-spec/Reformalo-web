@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 import { JsonLd } from "@/components/JsonLd";
+import { CookieBanner } from "@/components/CookieBanner";
 import {
   GoogleTagManagerNoScript,
   GoogleTagManagerScript,
@@ -150,6 +151,7 @@ export default function RootLayout({
           <Header />
           <main id="contenido">{children}</main>
           <Footer />
+          <CookieBanner />
         </Providers>
       </body>
     </html>

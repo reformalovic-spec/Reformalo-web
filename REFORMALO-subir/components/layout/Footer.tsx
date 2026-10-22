@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { CoffeeEgg } from "@/components/ui/CoffeeEgg";
+import { CookieSettingsButton } from "@/components/CookieBanner";
 import { legalLinks, serviceLinks, site } from "@/content/site";
 
 export function Footer() {
@@ -93,6 +94,9 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <CookieSettingsButton className="text-left transition-colors duration-150 hover:text-white" />
+              </li>
             </ul>
           </nav>
         </div>
