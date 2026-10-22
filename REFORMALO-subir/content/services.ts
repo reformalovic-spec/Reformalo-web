@@ -33,7 +33,7 @@ export const servicePages: Record<string, ServicePageData> = {
       "Mejoramos tu posicionamiento en buscadores y en respuestas de IA, y potenciamos las oportunidades locales para que más clientes te encuentren cada día.",
     metaTitle: "SEO y GEO para negocios locales",
     metaDescription:
-      "Posicionamiento SEO local y GEO para que tu negocio aparezca en Google, Maps y en las respuestas de ChatGPT y otras IAs. Reformalo, Osona y Catalunya.",
+      "Posicionamiento SEO local y GEO para que tu negocio aparezca en Google, Maps y en las respuestas de ChatGPT y otras IAs. Reformalo Vic (Osona).",
     blocks: [
       {
         eyebrow: "Qué es el SEO",
@@ -295,7 +295,7 @@ export const servicePages: Record<string, ServicePageData> = {
       "Tu ficha de empresa en Google es, muchas veces, lo primero que ve un cliente. La creamos, optimizamos y dejamos perfecta.",
     metaTitle: "Google Business Profile: ficha de empresa en Google",
     metaDescription:
-      "Creamos y optimizamos tu perfil de empresa en Google para que aparezcas en Maps y en las búsquedas locales. Reformalo, Osona y Catalunya.",
+      "Creamos y optimizamos tu perfil de empresa en Google para que aparezcas en Maps y en las búsquedas locales. Reformalo Vic (Osona).",
     blocks: [
       {
         eyebrow: "Por qué importa",
@@ -333,7 +333,7 @@ export const servicePages: Record<string, ServicePageData> = {
         ],
       },
       {
-        eyebrow: "Qué hacemos en Reformalo",
+        eyebrow: "Qué hacemos en Reformalo Vic",
         title: "Nos encargamos de todo, de principio a fin",
         intro: [
           "Tú no tienes que pelearte con la configuración: lo dejamos todo correctamente preparado.",

@@ -2,7 +2,7 @@
 // bastará con duplicar este archivo como `home.ca.ts` y elegir por idioma.
 
 export const hero = {
-  eyebrow: "Agencia de soluciones digitales · Osona y Catalunya",
+  eyebrow: "Agencia de soluciones digitales · Vic, Osona y Catalunya",
   title: "Soluciones digitales a tu *medida*.",
   subtitle:
     "Ayudamos a pymes y negocios locales a resolver sus retos con tecnología. Empezamos entendiendo tu negocio y, a partir de ahí, combinamos consultoría, inteligencia artificial, automatizaciones, visibilidad en Google y web.",
@@ -288,7 +288,7 @@ export const faq = {
   title: "Preguntas que nos hacen siempre",
   items: [
     {
-      q: "¿Qué hace una agencia de soluciones digitales como Reformalo?",
+      q: "¿Qué hace una agencia de soluciones digitales como Reformalo Vic?",
       a: "Ayudamos a pymes y negocios locales a resolver problemas reales con tecnología. Primero entendemos tu negocio y tus objetivos, y después proponemos y ponemos en marcha lo que mejor encaja: automatizaciones con IA, visibilidad en Google y en las IAs (SEO y GEO), perfil de empresa en Google o una web. No vendemos paquetes cerrados: cada solución se diseña a medida.",
     },
     {
@@ -316,8 +316,8 @@ export const faq = {
       a: "Perfecto, no hace falta empezar de cero. Con una consultoría revisamos qué funciona, qué no y por dónde empezar a mejorar.",
     },
     {
-      q: "¿Trabajáis solo en Osona?",
-      a: "Nuestra base está en Osona y trabajamos con negocios de toda Catalunya. Si estás en otro sitio, escríbenos y lo hablamos.",
+      q: "¿Trabajáis solo en Vic y Osona?",
+      a: "Nuestra base está en Vic, en la comarca de Osona, y trabajamos con negocios de toda Catalunya. Si estás en otro sitio, escríbenos y lo hablamos.",
     },
   ],
 } as const;

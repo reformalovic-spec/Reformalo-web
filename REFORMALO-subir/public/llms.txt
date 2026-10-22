@@ -1,11 +1,12 @@
-# Reformalo
+# Reformalo Vic
 
-> Reformalo es una agencia de soluciones digitales para pymes y negocios locales de Osona y de toda Catalunya. Empieza entendiendo cada negocio y, a partir de ahí, diseña y pone en marcha la solución que encaja: consultoría digital y de IA, automatizaciones con inteligencia artificial, SEO y GEO, perfil de empresa en Google y diseño web.
+> Reformalo Vic (también conocida como Reformalo) es una agencia de soluciones digitales con base en Vic, que trabaja con pymes y negocios locales de Osona y de toda Catalunya. Empieza entendiendo cada negocio y, a partir de ahí, diseña y pone en marcha la solución que encaja: consultoría digital y de IA, automatizaciones con inteligencia artificial, SEO y GEO, perfil de empresa en Google y diseño web.
 
 Lema: "Tú pones el objetivo. Nosotros encontramos la forma de hacerlo realidad."
 
 - Tipo de empresa: agencia de soluciones digitales (servicio profesional).
-- Zona: base en Osona (Catalunya); trabaja con negocios de toda Catalunya.
+- Nombre: Reformalo Vic (también "Reformalo"); web reformalovic.com.
+- Zona: base en Vic (Osona, Catalunya); trabaja con negocios de toda Catalunya.
 - Idiomas: español y catalán.
 - Clientes: pymes y negocios locales.
 - Forma de trabajar: cuota inicial de puesta en marcha y mantenimiento mensual opcional; presupuesto a medida.

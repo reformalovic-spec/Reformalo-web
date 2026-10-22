@@ -12,17 +12,17 @@ export function Footer() {
           <div>
             <Link
               href="/"
-              aria-label="Reformalo, ir al inicio"
+              aria-label={`${site.name}, ir al inicio`}
               className="inline-flex items-center gap-3"
             >
               <Logo className="h-12 w-12" />
               <span className="font-display text-2xl font-extrabold tracking-tight text-white">
-                Reformalo
+                {site.name}
               </span>
             </Link>
             <p className="mt-5 max-w-xs text-base leading-relaxed">
-              Agencia de soluciones digitales para pymes y negocios locales de
-              Osona y Catalunya.
+              Agencia de soluciones digitales en Vic para pymes y negocios
+              locales de Osona y Catalunya.
             </p>
           </div>
 
@@ -98,7 +98,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col gap-3 border-t border-white/10 pt-6 text-sm sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 Reformalo. Todos los derechos reservados.</p>
+          <p>© 2026 {site.name}. Todos los derechos reservados.</p>
           <p className="inline-flex items-center gap-1">
             Hecho en Osona, con mucho cariño y bastante café
             <CoffeeEgg />
