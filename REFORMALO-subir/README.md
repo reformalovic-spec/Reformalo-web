@@ -36,4 +36,4 @@ Usa Netlify Forms. En Next.js, Netlify detecta el formulario por `public/__forms
 
 ## Pendiente (`TODO:`)
 
-Busca `TODO:` en el código: dominio propio, precios de los planes, dirección o teléfono para el schema y textos en catalán.
+Busca `TODO:` en el código: precios de los planes, dirección o teléfono para el schema y textos en catalán.
