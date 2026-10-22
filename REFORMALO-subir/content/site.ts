@@ -1,7 +1,6 @@
 export const site = {
   name: "Reformalo",
-  // TODO: cambiar por el dominio propio cuando esté contratado.
-  url: "https://reformalo.netlify.app",
+  url: "https://reformalovic.com",
   email: "reformalo.vic@gmail.com",
   instagram: "https://www.instagram.com/reformalovic",
   instagramHandle: "@reformalovic",
