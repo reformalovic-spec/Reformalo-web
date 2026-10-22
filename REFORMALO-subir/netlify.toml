@@ -7,3 +7,10 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+# El subdominio de Netlify redirige al dominio propio (evita contenido duplicado).
+[[redirects]]
+  from = "https://reformalo.netlify.app/*"
+  to = "https://reformalovic.com/:splat"
+  status = 301
+  force = true
