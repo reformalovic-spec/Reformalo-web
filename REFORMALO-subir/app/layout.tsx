@@ -3,6 +3,10 @@ import { Bricolage_Grotesque, Poppins } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 import { JsonLd } from "@/components/JsonLd";
+import {
+  GoogleTagManagerNoScript,
+  GoogleTagManagerScript,
+} from "@/components/GoogleTagManager";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { serviceLinks, site } from "@/content/site";
@@ -133,6 +137,8 @@ export default function RootLayout({
   return (
     <html lang="es" className={`${display.variable} ${sans.variable}`}>
       <body>
+        <GoogleTagManagerNoScript id={site.gtmId} />
+        <GoogleTagManagerScript id={site.gtmId} />
         <JsonLd data={structuredData} />
         <Providers>
           <a
