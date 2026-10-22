@@ -11,7 +11,7 @@ import {
 } from "framer-motion";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
-import { nav } from "@/content/site";
+import { nav, site } from "@/content/site";
 import { ease } from "@/lib/motion";
 
 export function Header() {
@@ -48,12 +48,12 @@ export function Header() {
       <div className="container-x flex h-16 items-center justify-between sm:h-[4.5rem]">
         <Link
           href="/"
-          aria-label="Reformalo, ir al inicio"
+          aria-label={`${site.name}, ir al inicio`}
           className="flex items-center gap-2.5"
         >
           <Logo className="h-10 w-10" priority />
           <span className="font-display text-xl font-extrabold tracking-tight">
-            Reformalo
+            {site.name}
           </span>
         </Link>
 

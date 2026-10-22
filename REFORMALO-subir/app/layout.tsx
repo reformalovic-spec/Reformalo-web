@@ -22,11 +22,11 @@ const sans = Poppins({
   display: "swap",
 });
 
-const title = "Reformalo: agencia de soluciones digitales para pymes";
+const title = `${site.name}: agencia de soluciones digitales para pymes`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: title, template: "%s | Reformalo" },
+  title: { default: title, template: `%s | ${site.name}` },
   description: site.description,
   applicationName: site.name,
   openGraph: {
@@ -52,11 +52,12 @@ export const viewport: Viewport = {
 
 // Entidad principal: el mismo @id se referencia desde las páginas de servicio,
 // así buscadores e IAs entienden que todo pertenece a la misma empresa.
-// TODO: añadir dirección y teléfono si se quieren mostrar (LocalBusiness).
+// TODO: añadir calle, código postal y teléfono si se quieren mostrar.
 const organization = {
   "@type": "ProfessionalService",
   "@id": `${site.url}/#organizacion`,
   name: site.name,
+  alternateName: site.alternateNames,
   url: site.url,
   logo: `${site.url}/logo.png`,
   image: `${site.url}/opengraph-image`,
@@ -64,7 +65,14 @@ const organization = {
   slogan: site.tagline,
   email: site.email,
   sameAs: [site.instagram],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: site.city,
+    addressRegion: "Barcelona",
+    addressCountry: "ES",
+  },
   areaServed: [
+    { "@type": "City", name: site.city },
     { "@type": "AdministrativeArea", name: "Osona" },
     { "@type": "AdministrativeArea", name: "Catalunya" },
   ],
@@ -87,7 +95,7 @@ const organization = {
   },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
-    name: "Servicios de Reformalo",
+    name: `Servicios de ${site.name}`,
     itemListElement: serviceLinks.map((link) => {
       const page = servicePages[link.href.slice(1)];
       return {
@@ -108,6 +116,7 @@ const website = {
   "@id": `${site.url}/#web`,
   url: site.url,
   name: site.name,
+  alternateName: site.alternateNames,
   description: site.description,
   inLanguage: "es-ES",
   publisher: { "@id": organization["@id"] },

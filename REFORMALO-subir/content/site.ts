@@ -1,12 +1,15 @@
 export const site = {
-  name: "Reformalo",
+  name: "Reformalo Vic",
+  // Otras formas en que se conoce la marca (schema.org alternateName).
+  alternateNames: ["Reformalo", "Reformalovic"],
+  city: "Vic",
   url: "https://reformalovic.com",
   email: "reformalo.vic@gmail.com",
   instagram: "https://www.instagram.com/reformalovic",
   instagramHandle: "@reformalovic",
   tagline: "Soluciones digitales a tu medida.",
   description:
-    "Agencia de soluciones digitales para pymes de Osona y Catalunya: consultoría, automatizaciones con IA, SEO y GEO, Google Business Profile y webs.",
+    "Agencia de soluciones digitales en Vic para pymes de Osona y Catalunya: consultoría, automatizaciones con IA, SEO y GEO, Google Business Profile y webs.",
   responseTime: "Lunes a viernes · respuesta en 24-48 h",
 } as const;
 

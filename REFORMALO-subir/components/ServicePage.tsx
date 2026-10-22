@@ -47,6 +47,7 @@ export function ServicePage({ slug }: { slug: string }) {
           url: site.url,
         },
         areaServed: [
+          { "@type": "City", name: site.city },
           { "@type": "AdministrativeArea", name: "Osona" },
           { "@type": "AdministrativeArea", name: "Catalunya" },
         ],
