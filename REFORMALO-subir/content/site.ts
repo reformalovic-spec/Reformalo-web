@@ -11,6 +11,7 @@ export const site = {
   description:
     "Agencia de soluciones digitales en Vic para pymes de Osona y Catalunya: consultoría, automatizaciones con IA, SEO y GEO, Google Business Profile y webs.",
   responseTime: "Lunes a viernes · respuesta en 24-48 h",
+  gtmId: "GTM-K92M45ZV",
 } as const;
 
 export const nav = [
